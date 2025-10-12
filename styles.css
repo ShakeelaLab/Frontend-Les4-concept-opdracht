@@ -486,7 +486,7 @@ footer {
 
 @media screen and (max-width: 768px) {
     html {
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 
     nav ul {
