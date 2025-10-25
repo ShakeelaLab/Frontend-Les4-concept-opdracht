@@ -1,3 +1,14 @@
+:root {
+    --darkpurple: #5722CD;
+    --blue: #4845E4;
+    --pink: #ED4385;
+    --black: #0C0C0C;
+    --lightpurple: #F2F0FF;
+    --lightgrey: #F3F6F9;
+    --darkgrey: #7A7A7A;
+    --background-gradient: linear-gradient(133deg, rgba(75, 56, 194, 1) 15%, rgba(82, 66, 227, 1) 57%, rgba(80, 64, 222, 1) 91%);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*///////////////////////    Table of Contents*/
@@ -14,7 +25,7 @@
 /*        4.5 Form*/
 /*        4.6 Footer*/
 /*    5. Media Queries*/
-/*///////////////////////!*!*/
+/*/////////////////////////!*!*/
 
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
@@ -22,12 +33,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
-    html {
-        font-size: 16px;
-    }
-
 }
+
+html {
+    font-size: 16px;
+}
+
+
 
 body {
     height: 100vh;
@@ -127,28 +139,6 @@ footer {
     font-size: 0.9rem;
 }
 /* ------------------------------- 3. Layout --------------------------------------- */
-
-.container-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    flex-wrap: wrap;
-}
-
-.inner-container-wrapper {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.triangle-wrapper {
-    max-width: 100%;
-    position: relative;
-}
-
 .triangle-header,
 .triangle-articles,
 .triangle-reverse {
@@ -218,18 +208,26 @@ footer {
 }
 
 /* --------------- 3.1 Reusable ----------------------- */
-
-:root {
-    --darkpurple: #5722CD;
-    --blue: #4845E4;
-    --pink: #ED4385;
-    --black: #0C0C0C;
-    --lightpurple: #F2F0FF;
-    --lightgrey: #F3F6F9;
-    --darkgrey: #7A7A7A;
-    --background-gradient: linear-gradient(133deg, rgba(75, 56, 194, 1) 15%, rgba(82, 66, 227, 1) 57%, rgba(80, 64, 222, 1) 91%);
+.container-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
 }
 
+.inner-container-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.triangle-wrapper {
+    max-width: 100%;
+    position: relative;
+}
 /* --------------- 3.2 Other --------------------------- */
 
 .container-wrapper li,
@@ -486,7 +484,7 @@ footer {
 
 @media screen and (max-width: 768px) {
     html {
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 
     nav ul {
@@ -552,3 +550,4 @@ footer {
         top: -40px;
     }
 }
+
